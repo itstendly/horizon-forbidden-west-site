@@ -6,6 +6,31 @@
     --dk-font: "sst",Arial,sans-serif;
 }
 
+:root {
+    --wp--preset--font-size--normal: 16px;
+    --wp--preset--font-size--huge: 42px;
+}
+
+::-webkit-scrollbar {
+    width: 7px;
+    height: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgba(0,112,209,.6);
+    border-radius: 4px;
+    border: 1px solid #fff;
+    transition: background-color 8s;
+}
+
+::-webkit-scrollbar-track {
+    background: #fff;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(0,112,209,.8);
+}
+
 .container {
     width: 100%;
     height: 100vh;
@@ -463,4 +488,17 @@ p {
     width: 100%;
     height: 601px;
     background: rgba(54, 54, 54,0.6);
+}
+
+@Media(max-width: 414px) {
+    .overviewsecond {
+        background: url(images/5.webp);
+        background-size: 100%;
+        text-align: center;
+        width: 100%;
+        height: 600px;
+        margin: auto;
+        padding: 100px;
+        user-select: none;
+    }
 }
